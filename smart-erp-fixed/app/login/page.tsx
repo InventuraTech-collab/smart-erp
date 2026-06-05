@@ -22,7 +22,7 @@ export default function LoginPage() {
     setError(''); setLoading(true)
     setTimeout(() => {
       localStorage.setItem('erp_user', JSON.stringify({ company: form.company, branch: form.branch || 'Main Branch — Dubai', user: form.user, finYear: form.finYear }))
-      router.push('/dashboard')
+      router.push('/home')
     }, 700)
   }
 
