@@ -19,7 +19,7 @@ const APPS = [
 
 export default function HomePage() {
   const router = useRouter()
-  const [user, setUser] = useState<{ company: string; branch: string; user: string } | null>(null)
+  const [user, setUser] = useState<{ company: string; branch: string; user: string; finYear?: string } | null>(null)
 
   useEffect(() => {
     const stored = localStorage.getItem('erp_user')
