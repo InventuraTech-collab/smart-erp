@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react'
 
 const STATS = [
   { label:'Total Items',      val:'1,248', ch:'↑ 12 added this month', cls:'up',   top:''      },
-  { label:'Stock Value',      val:'omr 4.2M', ch:'↑ 3.4% vs last month', cls:'up', top:'green' },
+  { label:'Stock Value',      val:'OMR 4.2M', ch:'↑ 3.4% vs last month', cls:'up', top:'green' },
   { label:'Low Stock Items',  val:'34',    ch:'△ Needs reorder',      cls:'warn',  top:'amber' },
   { label:'Pending POs',      val:'18',    ch:'Awaiting receipt',     cls:'dn',    top:'red'   },
 ]
@@ -26,14 +26,14 @@ const LOW = [
 ]
 
 const ITEMS = [
-  { code:'ITM-0001', name:'Cement OPC 50kg',        category:'Construction', unit:'Bags',  stock:1240, value:'omr 62,000', status:'In Stock'  },
-  { code:'ITM-0002', name:'Steel Rebar 12mm',        category:'Steel',        unit:'Kg',    stock:8500, value:'omr 42,500', status:'In Stock'  },
-  { code:'ITM-0003', name:'Paint Primer White',      category:'Paints',       unit:'Ltrs',  stock:320,  value:'omr 9,600',  status:'In Stock'  },
-  { code:'ITM-0004', name:'PVC Pipe 3 inch',         category:'Plumbing',     unit:'Pcs',   stock:45,   value:'omr 2,250',  status:'Low Stock' },
-  { code:'ITM-0005', name:'Waterproofing Compound',  category:'Construction', unit:'Pcs',   stock:8,    value:'omr 1,200',  status:'Critical'  },
-  { code:'ITM-0006', name:'Tile Adhesive Grey 20kg', category:'Tiles',        unit:'Bags',  stock:25,   value:'omr 1,875',  status:'Low Stock' },
-  { code:'ITM-0007', name:'GI Pipe 2 inch',          category:'Plumbing',     unit:'Pcs',   stock:3,    value:'omr 450',    status:'Critical'  },
-  { code:'ITM-0008', name:'Sand Fine Grade',         category:'Aggregates',   unit:'Tons',  stock:180,  value:'omr 9,000',  status:'In Stock'  },
+  { code:'ITM-0001', name:'Cement OPC 50kg',        category:'Construction', unit:'Bags',  stock:1240, value:'OMR 62,000', status:'In Stock'  },
+  { code:'ITM-0002', name:'Steel Rebar 12mm',        category:'Steel',        unit:'Kg',    stock:8500, value:'OMR 42,500', status:'In Stock'  },
+  { code:'ITM-0003', name:'Paint Primer White',      category:'Paints',       unit:'Ltrs',  stock:320,  value:'OMR 9,600',  status:'In Stock'  },
+  { code:'ITM-0004', name:'PVC Pipe 3 inch',         category:'Plumbing',     unit:'Pcs',   stock:45,   value:'OMR 2,250',  status:'Low Stock' },
+  { code:'ITM-0005', name:'Waterproofing Compound',  category:'Construction', unit:'Pcs',   stock:8,    value:'OMR 1,200',  status:'Critical'  },
+  { code:'ITM-0006', name:'Tile Adhesive Grey 20kg', category:'Tiles',        unit:'Bags',  stock:25,   value:'OMR 1,875',  status:'Low Stock' },
+  { code:'ITM-0007', name:'GI Pipe 2 inch',          category:'Plumbing',     unit:'Pcs',   stock:3,    value:'OMR 450',    status:'Critical'  },
+  { code:'ITM-0008', name:'Sand Fine Grade',         category:'Aggregates',   unit:'Tons',  stock:180,  value:'OMR 9,000',  status:'In Stock'  },
 ]
 
 // Chart colors
@@ -210,7 +210,7 @@ export default function DashboardPage() {
 
         {/* LINE */}
         <div className="sec">
-          <div className="sec-hdr" style={{ background: ORANGE }}>📈 Stock Value by Month (omr M)</div>
+          <div className="sec-hdr" style={{ background: ORANGE }}>📈 Stock Value by Month (OMR M)</div>
           <div className="sec-body" style={{ padding:'12px 8px' }}>
             <canvas ref={lineRef} width={320} height={200} style={{ width:'100%', height:'auto' }}/>
           </div>
