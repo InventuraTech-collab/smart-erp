@@ -4,9 +4,9 @@ import { useRouter } from 'next/navigation'
 
 const COMPANIES = ['Building Materials LLC', 'Gulf Trading Co.', 'Al Noor Industries']
 const BRANCHES: Record<string, string[]> = {
-  'Building Materials LLC': ['Main Branch — Dubai', 'Abu Dhabi Branch', 'Sharjah Branch'],
-  'Gulf Trading Co.': ['Head Office — Dubai', 'Jebel Ali Branch'],
-  'Al Noor Industries': ['Factory — Sharjah', 'Dubai Office'],
+  'Building Materials LLC': ['Main Branch — Muscat', 'Salalah Branch', 'Sohar Branch'],
+  'Gulf Trading Co.': ['Head Office — Muscat', 'Nizwa Branch'],
+  'Al Noor Industries': ['Factory — Sohar', 'Muscat Office'],
 }
 const MODULES = ['Inventory','Purchasing','Sales','Accounting','HR','Reports','Manufacturing','CRM']
 
@@ -21,7 +21,7 @@ export default function LoginPage() {
     if (!form.company || !form.user || !form.password) { setError('Please fill in Company, Username, and Password.'); return }
     setError(''); setLoading(true)
     setTimeout(() => {
-      localStorage.setItem('erp_user', JSON.stringify({ company: form.company, branch: form.branch || 'Main Branch — Dubai', user: form.user, finYear: form.finYear }))
+      localStorage.setItem('erp_user', JSON.stringify({ company: form.company, branch: form.branch || 'Main Branch — Muscat', user: form.user, finYear: form.finYear }))
       router.push('/home')
     }, 700)
   }
@@ -52,7 +52,7 @@ export default function LoginPage() {
           </div>
 
           <h1 style={{ fontSize:30, fontWeight:700, color:'#fff', lineHeight:1.25, marginBottom:'1rem', letterSpacing:-.5 }}>Inventory &<br/>Business Management</h1>
-          <p style={{ fontSize:14, color:'rgba(255,255,255,.72)', lineHeight:1.65, maxWidth:320, marginBottom:'2rem' }}>A complete ERP suite for managing inventory, purchasing, sales and finance — built for UAE &amp; India markets.</p>
+          <p style={{ fontSize:14, color:'rgba(255,255,255,.72)', lineHeight:1.65, maxWidth:320, marginBottom:'2rem' }}>A complete ERP suite for managing inventory, purchasing, sales and finance — built for Oman &amp; GCC markets.</p>
           <div style={{ display:'flex', flexWrap:'wrap', gap:8, marginBottom:'2rem' }}>
             {MODULES.map(m => (
               <div key={m} style={{ display:'flex', alignItems:'center', gap:6, background:'rgba(255,255,255,.1)', color:'rgba(255,255,255,.88)', borderRadius:99, padding:'5px 12px', fontSize:12, fontWeight:500, border:'.5px solid rgba(255,255,255,.18)' }}>
@@ -61,7 +61,7 @@ export default function LoginPage() {
             ))}
           </div>
           <div style={{ display:'flex', gap:28 }}>
-            {[['1,200+','Active Items'],['3','Branches'],['OMR 4.2M','Stock Value']].map(([v,l]) => (
+            {[['1,200+','Active Items'],['3','Branches'],['OMR 4.200M','Stock Value']].map(([v,l]) => (
               <div key={l}>
                 <div style={{ fontSize:22, fontWeight:700, color:'#F47920' }}>{v}</div>
                 <div style={{ fontSize:11, color:'rgba(255,255,255,.6)', marginTop:2 }}>{l}</div>
@@ -113,7 +113,7 @@ export default function LoginPage() {
             </F>
             <F label="Server" hint="Auto-assigned based on financial year">
               <div style={{ height:36, border:'1.5px solid #ffe0c4', borderRadius:7, background:'#fff4ec', color:'#d4650a', fontSize:13, padding:'0 10px', display:'flex', alignItems:'center', fontWeight:500 }}>
-                SRV-{form.finYear} / Dubai
+                SRV-{form.finYear} / Muscat
               </div>
             </F>
             <button
