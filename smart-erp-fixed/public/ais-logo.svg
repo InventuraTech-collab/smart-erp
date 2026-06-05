@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <g transform="translate(80, 20)">
+    <path d="M55,8 A50,50 0 1,0 55,108 L55,86 A28,28 0 1,1 55,30 L55,8 Z" fill="#F47920"/>
+    <circle cx="55" cy="58" r="16" fill="white"/>
+    <rect x="83" y="8" width="18" height="100" rx="7" fill="#F47920"/>
+  </g>
+  <g transform="translate(175, 18)">
+    <path d="M50,12 C28,12 8,26 8,46 C8,66 28,74 50,80 C72,86 88,94 88,114 C88,134 68,148 46,148 C28,148 12,139 5,125"
+          fill="none" stroke="#8B1A1A" stroke-width="22" stroke-linecap="round"/>
+    <polygon points="82,6 97,44 88,39 84,56 77,52 81,35 72,40" fill="#8B1A1A"/>
+  </g>
+  <text x="200" y="175" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="16" fill="#4A4A4A" direction="rtl">المتقدمة لنظم المعلومات</text>
+  <text x="200" y="196" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#4A4A4A">
+    <tspan fill="#F47920" font-weight="700">A</tspan><tspan>dvanced </tspan>
+    <tspan fill="#F47920" font-weight="700">I</tspan><tspan>nformation </tspan>
+    <tspan fill="#F47920" font-weight="700">S</tspan><tspan>ystem</tspan>
+  </text>
+</svg>
