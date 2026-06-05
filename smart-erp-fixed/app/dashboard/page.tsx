@@ -1,6 +1,6 @@
 'use client'
 import ERPLayout from '@/components/ERPLayout'
-import Link from 'next/link'
+import Link from 'next/link' 
 import { useEffect, useRef } from 'react'
 
 const STATS = [
