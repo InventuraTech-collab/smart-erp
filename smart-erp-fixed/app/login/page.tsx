@@ -61,7 +61,7 @@ export default function LoginPage() {
             ))}
           </div>
           <div style={{ display:'flex', gap:28 }}>
-            {[['1,200+','Active Items'],['3','Branches'],['AED 4.2M','Stock Value']].map(([v,l]) => (
+            {[['1,200+','Active Items'],['3','Branches'],['OMR 4.2M','Stock Value']].map(([v,l]) => (
               <div key={l}>
                 <div style={{ fontSize:22, fontWeight:700, color:'#F47920' }}>{v}</div>
                 <div style={{ fontSize:11, color:'rgba(255,255,255,.6)', marginTop:2 }}>{l}</div>
