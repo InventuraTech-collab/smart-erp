@@ -2,7 +2,7 @@
 import ERPLayout from '@/components/ERPLayout'
 import Link from 'next/link' 
 import { useEffect, useRef } from 'react'
-
+const fmt = (n: number) => `OMR ${n.toLocaleString('en-OM', { minimumFractionDigits: 3, maximumFractionDigits: 3 })}`
 const STATS = [
   { label:'Total Items',      val:'1,248', ch:'↑ 12 added this month', cls:'up',   top:''      },
   { label:'Stock Value',      val:'OMR 4.2M', ch:'↑ 3.4% vs last month', cls:'up', top:'green' },
