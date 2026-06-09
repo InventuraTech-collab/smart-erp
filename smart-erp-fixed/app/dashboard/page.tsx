@@ -183,8 +183,7 @@ export default function DashboardPage() {
     <ERPLayout>
       <div className="ph">
         <div><div className="pt">Inventory Dashboard</div><div className="ps">Overview of stock, transactions and alerts</div></div>
-        <!--Link href="/master/items/new"><button onClick={() => router.push('/master/items')}>  >+ New Item</button></Link-->
-        <Link href="/master/items/new">
+        <Link href="/master/items/new"><button>+ New Item</button></Link>
   + New Item
 </Link>
         
