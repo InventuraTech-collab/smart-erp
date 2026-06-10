@@ -100,9 +100,27 @@ export default function LoginPage() {
                 {(BRANCHES[form.company]||[]).map(b => <option key={b}>{b}</option>)}
               </select>
             </F>
-            <F label="Username">
-              <input type="text" placeholder="Enter username" value={form.user} onChange={e => setForm({ ...form, user:e.target.value })}/>
-            </F>
+           <F label="Username">
+  <input
+    type="text"
+    placeholder="Enter username"
+    value={form.user}
+    onChange={e => setForm({ ...form, user: e.target.value })}
+    style={{
+      width: '100%',
+      height: 36,
+      border: '1.5px solid #e0e0e0',
+      borderRadius: 7,
+      padding: '0 10px',
+      fontSize: 13,
+      fontFamily: 'inherit',
+      color: '#1a1a1a',
+      background: '#fff',
+      boxSizing: 'border-box',
+      outline: 'none',
+    }}
+  />
+</F>
             <F label="Password">
               <input type="password" placeholder="Enter password" value={form.password} onChange={e => setForm({ ...form, password:e.target.value })}/>
             </F>
