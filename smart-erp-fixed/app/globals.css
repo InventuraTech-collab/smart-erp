@@ -137,3 +137,41 @@ a{text-decoration:none;color:inherit;}
 /* VAT BADGE */
 .vat-badge{display:inline-flex;align-items:center;gap:5px;background:var(--ogl);color:#6e1414;border-radius:99px;padding:3px 10px;font-size:12px;font-weight:600;}
 .vat-dot{width:7px;height:7px;border-radius:50%;background:var(--og);}
+// Add this to your globals.css or a <style> block
+.field label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  height: 36px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 7px;
+  padding: 0 10px;
+  font-size: 13px;
+  font-family: inherit;
+  color: #1a1a1a;
+  background: #fff;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #8B1A1A;
+}
+
+.fhint {
+  font-size: 11px;
+  color: #aaa;
+  margin-top: 3px;
+  display: block;
+}
