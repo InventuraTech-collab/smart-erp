@@ -11,24 +11,13 @@ const BRANCHES: Record<string, string[]> = {
 const MODULES = ['Inventory','Purchasing','Sales','Accounting','HR','Reports','Manufacturing','CRM']
 
 const inputStyle: React.CSSProperties = {
-  display: 'block',
-  width: '100%',
-  boxSizing: 'border-box',   // ← THIS is the key fix
-  height: 36,
-  border: '1.5px solid #e0e0e0',
-  borderRadius: 7,
-  padding: '0 10px',
-  fontSize: 13,
-  fontFamily: 'Segoe UI, system-ui, sans-serif',
-  color: '#1a1a1a',
-  background: '#fff',
-  outline: 'none',
+  display: 'block', width: '100%', boxSizing: 'border-box', height: 36,
+  border: '1.5px solid #e0e0e0', borderRadius: 7, padding: '0 10px',
+  fontSize: 13, fontFamily: 'Segoe UI, system-ui, sans-serif',
+  color: '#1a1a1a', background: '#fff', outline: 'none',
 }
+const selectStyle: React.CSSProperties = { ...inputStyle, cursor: 'pointer' }
 
-const selectStyle: React.CSSProperties = {
-  ...inputStyle,
-  cursor: 'pointer',
-}
 
 export default function LoginPage() {
   const router = useRouter()
@@ -46,14 +35,13 @@ export default function LoginPage() {
     }, 700)
   }
 
-  const F = ({ label, hint, children }: { label: string; hint?: string; children: React.ReactNode }) => (
-    <div style={{ marginBottom: 12 }}>
-      <label style={{ display:'block', fontSize:11, fontWeight:600, color:'#666', marginBottom:5, textTransform:'uppercase', letterSpacing:.4 }}>{label}</label>
-      {children}
-      {hint && <span style={{ fontSize:11, color:'#aaa', marginTop:3, display:'block' }}>{hint}</span>}
-    </div>
-  )
-
+ const F = ({ label, hint, children }: { label: string; hint?: string; children: React.ReactNode }) => (
+  <div style={{ marginBottom: 12 }}>
+    <label style={{ display:'block', fontSize:11, fontWeight:600, color:'#666', marginBottom:5, textTransform:'uppercase', letterSpacing:.4 }}>{label}</label>
+    {children}
+    {hint && <span style={{ fontSize:11, color:'#aaa', marginTop:3, display:'block' }}>{hint}</span>}
+  </div>
+)
   return (
     <div style={{ display:'flex', minHeight:'100vh', fontFamily:'Segoe UI,system-ui,sans-serif' }}>
       {/* LEFT */}
@@ -64,7 +52,7 @@ export default function LoginPage() {
           <div style={{ marginBottom:'2.5rem' }}>
             <img src="/ais-logo.svg" alt="AIS" style={{ height:60, width:'auto', objectFit:'contain', filter:'brightness(0) invert(1)' }}/>
           </div>
-          <h1 style={{ fontSize:30, fontWeight:700, color:'#fff', lineHeight:1.25, marginBottom:'1rem', letterSpacing:-.5 }}>Inventory &<br/>Business Management hvgv</h1>
+          <h1 style={{ fontSize:30, fontWeight:700, color:'#fff', lineHeight:1.25, marginBottom:'1rem', letterSpacing:-.5 }}>Inventory &<br/>Business Management </h1>
           <p style={{ fontSize:14, color:'rgba(255,255,255,.72)', lineHeight:1.65, maxWidth:320, marginBottom:'2rem' }}>A complete ERP suite for managing inventory, purchasing, sales and finance — built for Oman &amp; GCC markets.</p>
           <div style={{ display:'flex', flexWrap:'wrap', gap:8, marginBottom:'2rem' }}>
             {MODULES.map(m => (
