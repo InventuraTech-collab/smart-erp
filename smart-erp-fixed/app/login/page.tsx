@@ -64,7 +64,7 @@ export default function LoginPage() {
           <div style={{ marginBottom:'2.5rem' }}>
             <img src="/ais-logo.svg" alt="AIS" style={{ height:60, width:'auto', objectFit:'contain', filter:'brightness(0) invert(1)' }}/>
           </div>
-          <h1 style={{ fontSize:30, fontWeight:700, color:'#fff', lineHeight:1.25, marginBottom:'1rem', letterSpacing:-.5 }}>Inventory &<br/>Business Management</h1>
+          <h1 style={{ fontSize:30, fontWeight:700, color:'#fff', lineHeight:1.25, marginBottom:'1rem', letterSpacing:-.5 }}>Inventory &<br/>Business Management hvgv</h1>
           <p style={{ fontSize:14, color:'rgba(255,255,255,.72)', lineHeight:1.65, maxWidth:320, marginBottom:'2rem' }}>A complete ERP suite for managing inventory, purchasing, sales and finance — built for Oman &amp; GCC markets.</p>
           <div style={{ display:'flex', flexWrap:'wrap', gap:8, marginBottom:'2rem' }}>
             {MODULES.map(m => (
